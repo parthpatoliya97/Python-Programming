@@ -1,0 +1,16 @@
+# def double(x):
+#     return x*2
+# rather than writting function we can write simply lambda function in one line
+# here we can add multiple variable
+double=lambda x:x*2
+cube=lambda x:x*x*x
+avg=lambda x,y:(x+y)/2
+sum=lambda x,y,z:(x+y+z)
+print(double(5))
+print(cube(5))
+print(avg(6,4))
+print(sum(6,4,7))
+# here we can write function in the function
+def appl(fx,value):
+    return 6+fx(value)
+print(appl(lambda x:x*x*x,2))
